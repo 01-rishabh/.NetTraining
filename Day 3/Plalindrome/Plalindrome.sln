@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plalindrome", "Plalindrome\Plalindrome.csproj", "{FB96675E-9A06-4CA2-9A00-4A4F63E68091}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB96675E-9A06-4CA2-9A00-4A4F63E68091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB96675E-9A06-4CA2-9A00-4A4F63E68091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB96675E-9A06-4CA2-9A00-4A4F63E68091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB96675E-9A06-4CA2-9A00-4A4F63E68091}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF961AA0-53B5-4974-9A28-B67EFD189DD1}
+	EndGlobalSection
+EndGlobal
