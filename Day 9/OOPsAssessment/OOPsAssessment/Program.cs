@@ -18,7 +18,7 @@ namespace OOPsAssessment
             Console.WriteLine("Press 4 to exit.");
         }
 
-        static Boolean SelectionOption(byte choise)
+        static Boolean SelectionOption(int opt)
         {
             switch (choise)
             {
