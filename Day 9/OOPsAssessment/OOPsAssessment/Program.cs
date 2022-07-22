@@ -106,7 +106,7 @@ namespace OOPsAssessment
             {
                 DisplayMenu();
                 Console.WriteLine("Please Enter Your option");
-                byte opt = byte.Parse(Console.ReadLine());
+                int opt = int.Parse(Console.ReadLine());
                 flag = SelectionOption(opt);
             } while (flag);
 
