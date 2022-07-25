@@ -20,7 +20,7 @@ namespace OOPsAssessment
 
         static Boolean SelectionOption(int opt)
         {
-            switch (choise)
+            switch (opt)
             {
                 case 1:
                     studentArray = DynamicArray(studentArray);
