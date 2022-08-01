@@ -1,0 +1,37 @@
+Create table ProjectDemo(
+	ProjectID int primary key,
+	ProjectName varchar(20),
+	ProjectType varchar(20),
+	ProjectManager varchar(20),
+	Emp_no int
+);
+
+create table GL_Employee(
+emp_no int not null primary key,
+emp_name varchar(10) not null,
+dept_no int ,
+grade varchar(1),
+basic_salary numeric(9,2),
+ProjectID int FOREIGN KEY REFERENCES ProjectDemo(ProjectID)
+);
+
+Insert ProjectDemo values(1, 'Face Detection', 'AI', 'Ankit', 10)
+Insert ProjectDemo values(2, 'ECommerce', 'Web Dev', 'Harsh', 20)
+Insert ProjectDemo values(3, 'Contact Book', 'Java', 'Ria', 30)
+Insert ProjectDemo values(4, 'Email Slicer', 'Django', 'Aditi', 40)
+Insert ProjectDemo values(5, 'Banking System', 'Java', 'Amit', 30)
+
+Insert GL_Employee values(11,'sam', '10', 'B', 4500, 1)
+Insert GL_Employee values(12,'ram', '20', 'A', 9500, 2)
+Insert GL_Employee values(13,'nam', '30', 'C', 3500, 3)
+Insert GL_Employee values(14,'kam', '40', 'A', 9500, 2)
+Insert GL_Employee values(15,'pam', '50', 'D', 6500, 3)
+
+
+
+Select p.ProjectName, Count(g.ProjectID) as Total
+from GL_Employee g join ProjectDemo p
+on g.ProjectID = p.ProjectID
+group by p.ProjectName
+having count(p.Emp_no) >= 1
+order by count(g.ProjectID)
